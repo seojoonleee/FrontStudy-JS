@@ -34,11 +34,35 @@
         </div>
     </div> 
 
+    <form class="container my-5 form-group">
+        <p>상품선택</p>
+        <select class="form-select mt-2">
+            <option>모자</option>
+            <option>셔츠</option>
+            <option>바지</option>
+        </select>        
+        <select class="form-select hide-select mt-2">
+            <option>90</option>
+            <option>95</option>
+            <option>100</option>
+            <option>105</option>
+        </select>
+    </form>
+
     <!-- 탭 만들기 관련 -->
     <script src="/jsFolder/detail-js/tab.js"></script>
 
     <!-- 자료형 공부 관련 -->
-    <script src="/jsFolder/detail-js/data-type.js">        
-    </script>
+    <script src="/jsFolder/detail-js/data-type.js"></script>
+
+    <!-- select 태그 옷 선택 관련 -->
+     <script src="/jsFolder/detail-js/select.js"></script>
+
+     <!-- Ajax 를 통한 서버 통신 관련 -->
+     <script>
+        $.get('https://codingapple1.github.io/hello.txt').done(function(data) {
+            console.log(data + ' hi');
+        })
+     </script>
 </body>
 </html>

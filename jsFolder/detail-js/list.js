@@ -8,3 +8,13 @@ for(let i = 0; i < 3; i++) {
     $('.title' + (i + 1)).html(products[i].title);
     $('.price' + (i + 1)).html(products[i].price);
 }
+
+products.forEach((data) => {
+    const layout = `<div class="col-sm-4">
+                <img src="https://placehold.co/600" class="w-100">
+                <h5>${data.title}</h5>
+                <p>가격: ${data.price}</p>
+            </div>`;
+            
+    $('.row').append(layout);
+})
