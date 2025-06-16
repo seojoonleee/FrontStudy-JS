@@ -59,3 +59,26 @@ $('.title-sort').on('click', function() {
     $('.row').html('');
     layoutFn(sortProducts);
 });
+
+// 구매 버튼 클릭 시 형제 요소 찾아서 장바구니(localStorage)에 title 저장하기
+$('.buy').on('click', function(e) {
+    const title = $(e.target).siblings('h5').text();
+    if(localStorage.getItem('pocket') == null) {        
+        localStorage.setItem('pocket', JSON.stringify([title]));
+    } else {
+        let val = JSON.parse(localStorage.pocket);
+        val.push(title);
+        localStorage.setItem('pocket', JSON.stringify(val));
+    }
+});
+
+// $('.buy').on('click', function(e){
+//   var title = $(e.target).siblings('h5').text();
+//   if (localStorage.getItem('cart') != null ){
+//     var a = JSON.parse(localStorage.cart);
+//     a.push(title);
+//     localStorage.setItem('cart', JSON.stringify(a));
+//   } else {
+//     localStorage.setItem('cart', JSON.stringify([title]))
+//   }
+// });
