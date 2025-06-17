@@ -39,7 +39,7 @@
 .carousel-container {
   width: 300vw; /* vw = 브라우저 폭 , 100vw => 브라우저 전체 폭 => 300vw = 전체 브라우저 폭의 3배 */
   /* margin-left: -200vw; margin-left 등의 왼쪽으로 옮기는 스타일을 적용하면 3개의 이미지가 연달아서 있으므로 -100vw면 두 번째 사진, -200vw면 세 번째 사진만 화면에 나타나게 됨 */  
-  transition: all 1s;  
+  /* transition: all 1s;  */
 }
 .carousel-box {
   width: 100vw;
