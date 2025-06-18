@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/shopping.css">
+</head>
+<body class="lightgrey">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+
+    <!-- 최상단 네비게이션 바 -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark"> <!-- expand-lg : 부트스트랩에서 반응형으로 작동하는 클래스명 -->
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">쇼핑</a>            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">스토어</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#">시공견적</a>             
+                    </li>                
+                </ul>            
+            </div>
+        </div>
+    </nav>
+
+    <!-- 네비게이션 제외 모든 것들 -->
+    <div class="page-container">
+        <!-- 검색 기능 -->
+        <div class="search-container">
+            <form class="search-box">
+                <input class="search-input" type="search" placeholder="상품명 또는 브랜드명" aria-label="Search"/>
+                <button class="btn btn-outline-success" type="submit">검색</button>
+            </form>
+        </div>
+
+        <!-- 상품 정보 진열 -->
+        <div class="products-container">
+            <div class="products-box">
+                <img src="/png/pr1.JPG">
+                <h4 class="product-title">상품명: </h4>
+                <p class="product-brand">회사명: </p>
+                <p class="product-price">가격: </p>
+                <button class="move-to-cart">담기</button>
+            </div>
+            <div class="products-box">
+                <img src="/png/pr2.jpg">
+                <h4 class="product-title">상품명: </h4>
+                <p class="product-brand">회사명: </p>
+                <p class="product-price">가격: </p>
+                <button class="move-to-cart">담기</button>
+            </div>
+            <div class="products-box">
+                <img src="/png/pr3.JPG">
+                <h4 class="product-title">상품명: </h4>
+                <p class="product-brand">회사명: </p>
+                <p class="product-price">가격: </p>
+                <button class="move-to-cart">담기</button>
+            </div>
+            <div class="products-box">
+                <img src="/png/pr4.JPG">
+                <h4 class="product-title">상품명: </h4>
+                <p class="product-brand">회사명: </p>
+                <p class="product-price">가격: </p>
+                <button class="move-to-cart">담기</button>
+            </div>
+        </div>
+        
+        <!-- 장바구니 기능 -->        
+        <div class="cart-container">
+            <h4 class="cart-box-title">장바구니</h4>
+            <div class="cart-box d-flex justify-content-center align-items-center text-white">
+                여기로 드래그
+            </div>
+        </div>
+    </div>
+</body>
+</html>

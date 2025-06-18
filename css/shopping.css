@@ -1,0 +1,38 @@
+.lightgrey {
+    background-color: rgb(227, 227, 227);
+}
+/* .page-container {
+    
+} */
+.products-container {
+    display: flex;
+    gap: 30px;
+    width: 90%;
+    margin: auto;
+}
+.products-box{
+    /* display: flex; */
+    background-color: white;
+}
+.products-box img {
+    width: 100%;
+}
+.product-title {
+    font-size: x-large;
+    font-weight: 600;
+}
+.move-to-cart {
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+.cart-container {
+    background-color: rgb(208, 206, 206);
+    width: 90%;
+    margin: auto;
+}
+.cart-box {
+    height: 400px;
+    background-color: black;
+    width: 85%;
+    margin: auto;
+}
